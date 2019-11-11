@@ -1,0 +1,90 @@
+.scoreCardContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.gameScore {
+    display: flex;
+    width: 30%;
+    height: 350px;
+    font-size: 5px;
+    margin: 5px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.setScore {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.playerOne {
+    background-color: rgb(206, 19, 19);
+}
+
+.playerTwo {
+    background-color: rgb(47, 47, 223);
+}
+
+.setScoreNumber {
+    font-size: 140px;
+    color: rgb(242, 242, 247);
+}
+
+.gameScoreNumber {
+    font-size: 340px;
+    color: rgb(242, 242, 247);
+}
+
+.addPointButtons {
+    margin-left: 4px;
+    margin-right: 60%;;
+}
+
+.resetButtons {
+    display: flex;
+    margin: 1% 9% 5px;
+}
+
+.addPointButtonsDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 9%;
+}
+
+.resetButton {
+    margin-right: 10px;
+}
+
+.opponents {
+    display: flex;
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    font-size: 260%;
+}
+
+/* .opponentElements {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 200px;
+    font-size: 350%
+} */
+
+h1:hover {
+    color: green;
+}
+
+.pointer {cursor: pointer;}

@@ -1,22 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AppComponent } from '../app.component';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-score-card',
+  templateUrl: './score-card.component.html',
+  styleUrls: ['./score-card.component.css']
 })
-export class AppComponent {
+export class ScoreCardComponent implements OnInit {
+  names: AppComponent;
   title = 'table-tennis-score-keeper';
   pointsPlayerOne = 0;
   pointsPlayerTwo = 0;
   playerOneSetScore = 0;
   playerTwoSetScore = 0;
   duceWinnerMargin = 2;
-  myName = 'ijahn';
 
-  addPlayers(player1: HTMLInputElement, player2: HTMLInputElement) {
-    console.log(`${player1.value} ${player2.value}`);
-  }
+  @Input() newPlayerOneName: string;
+  @Input() newPlayerTwoName: string;
+
 
   addPointPlayerOne(): number {
     this.pointsPlayerOne += 1;
@@ -42,7 +44,8 @@ export class AppComponent {
     // }
     if (this.pointsPlayerOne >= 11 && this.getPointsDif() >= 2) {
       this.playerOneSetScore += 1;
-      this.reset();
+      this.pointsPlayerOne = 0;
+      this.pointsPlayerTwo = 0;
     }
   }
 
@@ -70,8 +73,12 @@ export class AppComponent {
     this.playerTwoSetScore = 0;
   }
 
-  // addPlayerNames() {
-  //   window.alert('You will be notified when the product goes on sale');
-  // }
+  onNotify() {
+    window.alert('hello');
+  }
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

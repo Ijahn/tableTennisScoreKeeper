@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+}
+
+.submitButton {
+    width: 20%;
+    margin-top: 5%;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+h1 {
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}

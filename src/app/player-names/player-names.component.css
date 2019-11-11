@@ -1,0 +1,18 @@
+.opponents {
+    display: flex;
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    font-size: 260%;
+}
+
+h1:hover {
+    color: green;
+}
+
+.pointer {cursor: pointer;}
